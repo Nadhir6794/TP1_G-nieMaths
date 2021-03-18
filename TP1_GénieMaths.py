@@ -1,4 +1,4 @@
-# Algorithme de Gauss
+# METHODE DE GAUSS
 
 
 import numpy as np
@@ -60,7 +60,7 @@ def Gauss(A, B):
     return Xgauss
 
 
-# Décomposition LU
+# DECOMPOSITION + RESOLUTION LU
 
 def ResolutionSystTriInf(Taug):
     n, m = np.shape(Taug)
@@ -112,7 +112,7 @@ def ResolutionLU(L, U, B, A):
     return XLU
 
 
-# Pivot partiel
+# PIVOT PARTIEL
 
 def GaussChoixPivotPartiel(A, B):
     Aaug = np.hstack((A, B))
@@ -138,7 +138,7 @@ def GaussChoixPivotPartiel(A, B):
     return X
 
 
-# Pivot total
+# PIVOT TOTAL
 
 def GaussChoixPivotTotal(A, B):
     A2 = np.copy(A)
@@ -171,6 +171,7 @@ def GaussChoixPivotTotal(A, B):
 
     return x
 
+# GRAPHIQUE
 
 # taille=[3,4,10]
 # taille=[4]
